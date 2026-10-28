@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- The line above the top shelf's row: "Top picks on Prime Video". -->
+    <string name="top_shelf_kicker" tools:ignore="MissingTranslation">Top picks on %1$s</string>
+    <string name="wallpaper_dim_label" tools:ignore="MissingTranslation">Wallpaper dimming</string>
+    <string name="layout_label" tools:ignore="MissingTranslation">Layout</string>
+    <string name="layout_panes" tools:ignore="MissingTranslation">Panes</string>
+    <string name="layout_cinematic" tools:ignore="MissingTranslation">Cinematic</string>
+    <string name="cinematic_tagline" tools:ignore="MissingTranslation">Relax · Watch · Explore</string>
+    <string name="action_inputs" tools:ignore="MissingTranslation">Inputs</string>
+    <string name="action_assistant" tools:ignore="MissingTranslation">Assistant</string>
+    <string name="cinematic_home" tools:ignore="MissingTranslation">Home</string>
+    <string name="home_name_state" tools:ignore="MissingTranslation">Name on Home: %1$s</string>
+    <string name="home_name_title" tools:ignore="MissingTranslation">Name on Home</string>
+    <string name="home_name_reset" tools:ignore="MissingTranslation">Use Hushtile</string>
+    <string name="cinematic_apps" tools:ignore="MissingTranslation">Apps</string>
+    <string name="action_settings" tools:ignore="MissingTranslation">Settings</string>
+    <string name="online_wallpapers" tools:ignore="MissingTranslation">Get new wallpapers from Wikimedia Commons</string>
+    <string name="online_wallpapers_loading" tools:ignore="MissingTranslation">Downloading wallpapers…</string>
+    <string name="online_wallpapers_added" tools:ignore="MissingTranslation">%1$d new wallpapers added. Pick one under Wallpaper.</string>
+    <string name="online_wallpapers_failed" tools:ignore="MissingTranslation">Could not download wallpapers. Check the internet connection.</string>
+    <string name="app_lock_state" tools:ignore="MissingTranslation">App lock / kids PIN: %1$s</string>
+    <string name="app_lock_apps" tools:ignore="MissingTranslation">%1$d apps locked</string>
+    <string name="app_lock_hint" tools:ignore="MissingTranslation">A 4-digit PIN before the chosen apps open from Home, and before these settings open. Apps opened by voice or from the TV\'s own Settings are not locked.</string>
+    <string name="app_lock_title_count" tools:ignore="MissingTranslation">App lock (%1$d apps locked)</string>
+    <string name="app_lock_choose_apps" tools:ignore="MissingTranslation">Choose locked apps</string>
+    <string name="app_lock_change_pin" tools:ignore="MissingTranslation">Change PIN</string>
+    <string name="app_lock_turn_off" tools:ignore="MissingTranslation">Turn app lock off</string>
+    <string name="app_lock_off" tools:ignore="MissingTranslation">App lock is off</string>
+    <string name="app_lock_enter" tools:ignore="MissingTranslation">Enter PIN</string>
+    <string name="app_lock_new" tools:ignore="MissingTranslation">Choose a 4-digit PIN</string>
+    <string name="app_lock_repeat" tools:ignore="MissingTranslation">Enter the PIN again</string>
+    <string name="app_lock_wrong" tools:ignore="MissingTranslation">Wrong PIN</string>
+    <string name="app_lock_four_digits" tools:ignore="MissingTranslation">The PIN needs 4 digits</string>
+    <string name="app_lock_mismatch" tools:ignore="MissingTranslation">The PINs did not match</string>
+    <string name="app_lock_pin_set" tools:ignore="MissingTranslation">PIN set. Now choose the apps to lock.</string>
+    <string name="app_lock_saved" tools:ignore="MissingTranslation">%1$d apps locked</string>
+    <string name="utility_more" tools:ignore="MissingTranslation">More</string>
+    <string name="utility_less" tools:ignore="MissingTranslation">Less</string>
+    <string name="utility_all_apps" tools:ignore="MissingTranslation">All apps</string>
+    <string name="bluetooth" tools:ignore="MissingTranslation">Bluetooth</string>
+    <string name="menu_picture" tools:ignore="MissingTranslation">Picture &amp; Display</string>
+    <string name="menu_sound" tools:ignore="MissingTranslation">Sound</string>
+    <string name="menu_picture_sound" tools:ignore="MissingTranslation">Picture &amp; Sound</string>
+    <string name="menu_picture_key" tools:ignore="MissingTranslation">Menu key</string>
+    <string name="menu_picture_hint" tools:ignore="MissingTranslation">Press the Menu key on the remote for Picture and Sound</string>
+    <string name="menu_tv_settings" tools:ignore="MissingTranslation">All TV settings</string>
+    <string name="menu_network" tools:ignore="MissingTranslation">Network &amp; Internet</string>
+    <string name="menu_remotes" tools:ignore="MissingTranslation">Remotes &amp; Bluetooth</string>
+    <string name="menu_apps" tools:ignore="MissingTranslation">Apps</string>
+    <string name="menu_all_settings" tools:ignore="MissingTranslation">All settings</string>
+    <string name="search_button" tools:ignore="MissingTranslation">Search</string>
+    <string name="search_voice_hint" tools:ignore="MissingTranslation">For voice, press the mic button on your remote</string>
+    <string name="setup_title" tools:ignore="MissingTranslation">Finish setting up Hushtile</string>
+    <string name="setup_suggestions" tools:ignore="MissingTranslation">Show suggestions from your apps</string>
+    <string name="setup_notifications" tools:ignore="MissingTranslation">Show notifications on the bell</string>
+    <string name="setup_usage" tools:ignore="MissingTranslation">Order apps by how much you use them</string>
+    <string name="setup_overlay" tools:ignore="MissingTranslation">Open Home when the TV is switched on</string>
+    <string name="setup_off" tools:ignore="MissingTranslation">Off</string>
+    <string name="setup_not_now" tools:ignore="MissingTranslation">Not now</string>
+    <string name="menu_finish_setup" tools:ignore="MissingTranslation">Finish setup</string>
+    <string name="notifications_button" tools:ignore="MissingTranslation">Notifications</string>
+    <string name="notifications_none" tools:ignore="MissingTranslation">No notifications</string>
+    <string name="notifications_unavailable" tools:ignore="MissingTranslation">This TV keeps notification access for setup over ADB</string>
+    <string name="notifications_clear_all" tools:ignore="MissingTranslation">Clear all</string>
+    <string name="notifications_need_access" tools:ignore="MissingTranslation">Allow notification access for Hushtile</string>
+    <string name="all_apps_title" tools:ignore="MissingTranslation">All apps (%1$d)</string>
+</resources>

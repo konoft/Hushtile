@@ -1,0 +1,2511 @@
+{
+ "package_rules": [
+  {
+   "config": {
+    "live_tv_package": "com.android.tv"
+   },
+   "needs": "com.android.tv",
+   "tvs": 4
+  },
+  {
+   "config": {
+    "live_tv_package": "com.apps.livetv"
+   },
+   "needs": "com.apps.livetv",
+   "tvs": 2
+  },
+  {
+   "config": {
+    "live_tv_package": "com.cltv.hybrid"
+   },
+   "needs": "com.cltv.hybrid",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "source_panel_action": "com.coocaa.intent.action.CONTROL_CENTER",
+    "source_panel_extra": "control_center_command=100",
+    "source_panel_service": "com.coocaa.os.ccosservice/com.coocaa.os.centerintegration.service.CenterService"
+   },
+   "needs": "com.coocaa.os.ccosservice",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "source_panel_service": "com.cvte.tv.globalui/.InputSourceActivity"
+   },
+   "needs": "com.cvte.tv.globalui",
+   "tvs": 2
+  },
+  {
+   "config": {
+    "live_tv_package": "com.google.android.tv"
+   },
+   "needs": "com.google.android.tv",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "com.heytap.tv.livetv"
+   },
+   "needs": "com.heytap.tv.livetv",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "source_panel_action": "com.hisense.tv.start_inputs",
+    "source_panel_service": "com.hisense.tv.inputs/com.hisense.tv.InputsUIService"
+   },
+   "needs": "com.hisense.tv.inputs",
+   "tvs": 3
+  },
+  {
+   "config": {
+    "live_tv_package": "com.jamdeo.tv.livetv"
+   },
+   "needs": "com.jamdeo.tv.livetv",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "com.mediatek.tv.oneworld.tvcenter"
+   },
+   "needs": "com.mediatek.tv.oneworld.tvcenter",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "com.mediatek.wwtv.tvcenter"
+   },
+   "needs": "com.mediatek.wwtv.tvcenter",
+   "tvs": 16
+  },
+  {
+   "config": {
+    "live_tv_package": "com.mitv.livetv"
+   },
+   "needs": "com.mitv.livetv",
+   "tvs": 2
+  },
+  {
+   "config": {
+    "live_tv_package": "com.oneplus.tv.android.livetv"
+   },
+   "needs": "com.oneplus.tv.android.livetv",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "com.realtek.tv"
+   },
+   "needs": "com.realtek.tv",
+   "tvs": 5
+  },
+  {
+   "config": {
+    "live_tv_package": "com.realtek.tv.atv"
+   },
+   "needs": "com.realtek.tv.atv",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "source_panel_service": "com.sdt.app.skysettings/.entry.activity.QuickSourceActivity"
+   },
+   "needs": "com.sdt.app.skysettings",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "com.skyworth.tv"
+   },
+   "needs": "com.skyworth.tv",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "com.smartdevice.livetv"
+   },
+   "needs": "com.smartdevice.livetv",
+   "tvs": 5
+  },
+  {
+   "config": {
+    "source_panel_service": "com.softwinner.awsource/com.softwinner.awsource.MainActivity"
+   },
+   "needs": "com.softwinner.awsource",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "com.sony.dtv.tvlin"
+   },
+   "needs": "com.sony.dtv.tvlin",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "com.sony.dtv.tvx"
+   },
+   "needs": "com.sony.dtv.tvx",
+   "tvs": 3
+  },
+  {
+   "config": {
+    "source_panel_action": "com.tcl.insrc.SHOW_WINDOW",
+    "source_panel_service": "com.tcl.settings/.ShowWindowService"
+   },
+   "needs": "com.tcl.settings",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "com.tcl.tv"
+   },
+   "needs": "com.tcl.tv",
+   "tvs": 18
+  },
+  {
+   "config": {
+    "live_tv_package": "com.vt.tv.tvcenter"
+   },
+   "needs": "com.vt.tv.tvcenter",
+   "tvs": 2
+  },
+  {
+   "config": {
+    "live_tv_package": "jp.co.sharp.av.android.aquostvapp"
+   },
+   "needs": "jp.co.sharp.av.android.aquostvapp",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "org.droidtv.playtv"
+   },
+   "needs": "org.droidtv.playtv",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "org.droidtv.zapster"
+   },
+   "needs": "org.droidtv.zapster",
+   "tvs": 1
+  }
+ ],
+ "profiles": [
+  {
+   "brand": [
+    "acer"
+   ],
+   "config": {
+    "key_filter": false,
+    "live_tv_package": "com.apps.livetv"
+   },
+   "id": "acer-ar3-r3",
+   "tokens": [
+    "ar3",
+    "device",
+    "rtd2841a",
+    "scbc"
+   ]
+  },
+  {
+   "brand": [
+    "acer"
+   ],
+   "config": {
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "acer-ar32hdigu2841at",
+   "tokens": [
+    "ar32hdigu2841at",
+    "device",
+    "moka",
+    "r3_gtv",
+    "rtd2841a"
+   ]
+  },
+  {
+   "brand": [
+    "acer"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.apps.livetv"
+    ],
+    "live_tv_package": "com.apps.livetv",
+    "stock_home_redirect": "com.google.android.tvlauncher"
+   },
+   "id": "acer-ar55ar2851udpro",
+   "tokens": [
+    "ar55ar2851udpro",
+    "rtd2851m",
+    "scbc"
+   ]
+  },
+  {
+   "brand": [
+    "aiwa"
+   ],
+   "config": {
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "reduced_motion": false
+   },
+   "id": "aiwa-ai-pont-sa",
+   "tokens": [
+    "changhong",
+    "isdb86aw",
+    "osaka",
+    "pont"
+   ]
+  },
+  {
+   "brand": [
+    "aqua"
+   ],
+   "config": {
+    "live_tv_package": "com.cltv.hybrid",
+    "settings_key_keycodes": [
+     83
+    ],
+    "settings_key_panel": true
+   },
+   "id": "aqua-matrixtv-ee-50",
+   "tokens": [
+    "aq9676eu",
+    "haier",
+    "indonesia",
+    "matrixtv",
+    "omonia"
+   ]
+  },
+  {
+   "brand": [
+    "artel"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.yandex.tv.home"
+    ],
+    "input_uri_scheme": "live-tv",
+    "reduced_motion": true
+   },
+   "id": "artel-43d1200b",
+   "tokens": [
+    "43d1200b",
+    "cvte",
+    "m5621",
+    "uzbekistan",
+    "yandex",
+    "yaos"
+   ]
+  },
+  {
+   "brand": [
+    "artel"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.netflix.ninja",
+     "com.google.android.youtube.tvmusic",
+     "com.google.android.play.games",
+     "com.creative.fastscreen.tv",
+     "com.apps.biz.ds",
+     "com.apps.function.audiolink"
+    ],
+    "key_filter": false,
+    "live_tv_package": "com.realtek.tv",
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "artel-a55lu8500",
+   "tokens": [
+    "a55lu8500",
+    "device",
+    "moka",
+    "r3gs",
+    "rtd2841a",
+    "uzbekistan"
+   ]
+  },
+  {
+   "brand": [
+    "benq"
+   ],
+   "config": {
+    "app_keys": [
+     "scan:189:com.android.tv.settings",
+     "scan:433:com.plexapp.android"
+    ],
+    "hidden_apps": [
+     "com.sdmc.implayer"
+    ]
+   },
+   "id": "benq-gv32",
+   "tokens": [
+    "benq_gv01",
+    "gv32",
+    "himalaya",
+    "m7332",
+    "portable",
+    "sdmc"
+   ]
+  },
+  {
+   "brand": [
+    "byintek"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.sdt.app.skysettings"
+    ],
+    "source_panel_service": "com.sdt.app.skysettings/.entry.activity.QuickSourceActivity"
+   },
+   "id": "byintek-u4",
+   "tokens": [
+    "1080p",
+    "hi3751v350",
+    "love",
+    "rg_hs352",
+    "skyworth"
+   ]
+  },
+  {
+   "brand": [
+    "chihi"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.softwinner.tv.factorymenu",
+     "com.hx.projectortest",
+     "com.hxdevicetest"
+    ],
+    "reduced_motion": true
+   },
+   "id": "chihi-hx-p30",
+   "tokens": [
+    "h713",
+    "h713m_tuna_p3",
+    "p30"
+   ]
+  },
+  {
+   "brand": [
+    "epson"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.droidlogic.android.tv",
+     "com.droidlogic.updater"
+    ]
+   },
+   "id": "epson-ls800",
+   "tokens": [
+    "askey",
+    "ha90",
+    "ls800",
+    "module",
+    "sti6202d101"
+   ]
+  },
+  {
+   "brand": [
+    "formovie"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "formovie-xming-page-one-tianshan",
+   "tokens": [
+    "mt9630",
+    "one",
+    "page",
+    "tianshan",
+    "xming",
+    "xmm2101"
+   ]
+  },
+  {
+   "brand": [
+    "haier"
+   ],
+   "config": {
+    "app_keys": [
+     "scan:225:com.mediatek.wwtv.tvcenter",
+     "KEYCODE_NOTIFICATION:com.hushtile.home/com.gathin.tvhome.QuickSettingsActivity"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "settings_key_panel": true
+   },
+   "id": "haier-matrixtv-be",
+   "tokens": [
+    "matrixtv"
+   ]
+  },
+  {
+   "brand": [
+    "haier"
+   ],
+   "config": {
+    "live_tv_package": "com.mediatek.tv.oneworld.tvcenter"
+   },
+   "id": "haier-matrixtv-de",
+   "tokens": [
+    "hr9676euf",
+    "matrixtv",
+    "omonia"
+   ]
+  },
+  {
+   "brand": [
+    "hikeen"
+   ],
+   "config": {
+    "live_tv_package": "com.android.tv"
+   },
+   "id": "hikeen-smart-rtd285o",
+   "tokens": [
+    "rtd285o",
+    "smarttv",
+    "zeasn"
+   ]
+  },
+  {
+   "brand": [
+    "hisense"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.jamdeo.tv.vod",
+     "com.jamdeo.tv.livetv",
+     "com.hisense.tv.inputs",
+     "com.keylab.speech.view.vidaa",
+     "com.hisense.tv.globalui",
+     "com.hisense.uifac",
+     "com.hisense.tv.mirror"
+    ],
+    "key_filter": false,
+    "live_tv_package": "com.jamdeo.tv.livetv",
+    "source_panel_action": "com.hisense.tv.start_inputs",
+    "source_panel_service": "com.hisense.tv.inputs/com.hisense.tv.InputsUIService"
+   },
+   "id": "hisense-65d62qh",
+   "tokens": [
+    "65d62qh",
+    "mt9653",
+    "vidaa_tv"
+   ]
+  },
+  {
+   "brand": [
+    "hisense"
+   ],
+   "config": {
+    "source_panel_action": "com.hisense.tv.start_inputs",
+    "source_panel_service": "com.hisense.tv.inputs/com.hisense.tv.InputsUIService"
+   },
+   "id": "hisense-e5q-pro",
+   "tokens": [
+    "e5q",
+    "mt9653",
+    "vidaa_tv"
+   ]
+  },
+  {
+   "brand": [
+    "hisense"
+   ],
+   "config": {
+    "app_labels": [
+     "com.mediatek.wwtv.tvcenter=Set-top box"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter"
+   },
+   "id": "hisense-hismart-2k-atv4-hamamatsucho",
+   "tokens": [
+    "atv4",
+    "hamamatsucho",
+    "hismart"
+   ]
+  },
+  {
+   "brand": [
+    "hisense"
+   ],
+   "config": {
+    "handle_view_inputs": true,
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter",
+     "com.hisense.tv.protector"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter"
+   },
+   "id": "hisense-smarttv-4k-ffm",
+   "tokens": [
+    "ffm",
+    "huangshan",
+    "smarttv",
+    "u9dg"
+   ]
+  },
+  {
+   "brand": [
+    "hisense"
+   ],
+   "config": {
+    "handle_view_inputs": false,
+    "hidden_apps": [
+     "com.vt.tv.tvcenter",
+     "com.android.tv.settings",
+     "com.vt.tv.singlelisten",
+     "com.vt.tv.mediacenter"
+    ],
+    "key_filter": false,
+    "live_tv_package": "com.vt.tv.tvcenter",
+    "settings_key_panel": true
+   },
+   "id": "hisense-u7-wutaishan",
+   "tokens": [
+    "55u7sg",
+    "mt9690",
+    "wutaishan"
+   ]
+  },
+  {
+   "brand": [
+    "hisense"
+   ],
+   "config": {
+    "app_keys": [
+     "190:com.google.android.youtube.tv",
+     "295:com.amazon.amazonvideo.livingroom",
+     "607:com.disney.disneyplus",
+     "606:com.tubitv"
+    ],
+    "hidden_apps": [
+     "com.vt.tv.tvcenter"
+    ],
+    "live_tv_package": "com.vt.tv.tvcenter",
+    "settings_key_keycodes": [
+     83
+    ],
+    "settings_key_panel": true
+   },
+   "id": "hisense-u75-hengshan",
+   "tokens": [
+    "65u7esg",
+    "75u75n",
+    "hengshan",
+    "u75"
+   ]
+  },
+  {
+   "brand": [
+    "hotack"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.htc.luminaos",
+     "com.softwinner.tv.factorymenu"
+    ],
+    "reduced_motion": true
+   },
+   "id": "hotack-l018",
+   "tokens": [
+    "adt-3",
+    "h713",
+    "l018",
+    "luminaos",
+    "reports"
+   ]
+  },
+  {
+   "brand": [
+    "jvc"
+   ],
+   "config": {
+    "app_keys": [
+     "190:com.google.android.youtube.tv",
+     "191:com.netflix.ninja"
+    ],
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter"
+    ],
+    "live_tv_action": "android.mtk.intent.action.ACTION_REQUEST_TOP_RESUME",
+    "live_tv_package": "com.mediatek.wwtv.tvcenter"
+   },
+   "id": "jvc-lt-43km348",
+   "tokens": [
+    "43km348",
+    "jagalchi",
+    "ktc-built",
+    "ktc_jvc_2k_25gv1",
+    "lt-43km348",
+    "mt5867",
+    "t56"
+   ]
+  },
+  {
+   "brand": [
+    "kalley"
+   ],
+   "config": {
+    "live_tv_package": "com.realtek.tv",
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "kalley-r10g",
+   "tokens": [
+    "acer_ffm",
+    "device",
+    "moka",
+    "product",
+    "r10g",
+    "rtd2875p"
+   ]
+  },
+  {
+   "brand": [
+    "kodak"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.smartdevice.livetv"
+    ],
+    "live_tv_package": "com.smartdevice.livetv"
+   },
+   "id": "kodak-55ca0909",
+   "tokens": [
+    "55ca0909",
+    "mt5886",
+    "skyworth",
+    "sppl-built",
+    "sw3_atv"
+   ]
+  },
+  {
+   "brand": [
+    "kunft"
+   ],
+   "config": {
+    "key_filter": false,
+    "power_on_home": false,
+    "power_on_home_always": true
+   },
+   "id": "kunft-k8415h40f",
+   "tokens": [
+    "changhong",
+    "dvb92kt",
+    "k8415h40f",
+    "pont",
+    "redwood"
+   ]
+  },
+  {
+   "brand": [
+    "liberton"
+   ],
+   "config": {
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "reduced_motion": false
+   },
+   "id": "liberton-ltv-24h01at",
+   "tokens": [
+    "24h01at",
+    "built",
+    "changhong",
+    "device",
+    "ltv",
+    "redwood",
+    "ukraine"
+   ]
+  },
+  {
+   "brand": [
+    "magcubic"
+   ],
+   "config": {
+    "source_panel_service": "com.softwinner.awsource/com.softwinner.awsource.MainActivity"
+   },
+   "id": "magcubic-hy300-pro-plus",
+   "tokens": [
+    "hy300",
+    "rk3566_rgo"
+   ]
+  },
+  {
+   "brand": [
+    "noblex"
+   ],
+   "config": {
+    "key_filter": false,
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "power_on_home": false,
+    "power_on_home_always": true
+   },
+   "id": "noblex-db58x7550",
+   "tokens": [
+    "argentina",
+    "changhong",
+    "db58x7550",
+    "isdb93ch",
+    "m7322",
+    "pont",
+    "sindorim"
+   ]
+  },
+  {
+   "brand": [
+    "noblex"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.smartdevice.livetv"
+    ],
+    "live_tv_package": "com.smartdevice.livetv",
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "noblex-dr55x9500",
+   "tokens": [
+    "`prismplus-p4ka-sw6h",
+    "argentina",
+    "dr55x9500",
+    "m7332",
+    "skyworth",
+    "sw6h"
+   ]
+  },
+  {
+   "brand": [
+    "nokia"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.apps.function.audiolink"
+    ],
+    "live_tv_package": "com.android.tv",
+    "power_on_home_always": true
+   },
+   "id": "nokia-atv-r1",
+   "tokens": [
+    "atv",
+    "rt41",
+    "rtd284o",
+    "scbc"
+   ]
+  },
+  {
+   "brand": [
+    "nvidia",
+    "shield"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.android.tv.settings"
+    ],
+    "live_tv_package": "com.google.android.tv"
+   },
+   "id": "nvidia-shield-tv-2019",
+   "tokens": [
+    "p3430",
+    "sif",
+    "tube"
+   ]
+  },
+  {
+   "brand": [
+    "ok."
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "reduced_motion": false
+   },
+   "id": "ok-ai-pont-ikebukuro",
+   "tokens": [
+    "changhong",
+    "dvb91nk",
+    "ikebukuro",
+    "nikkei",
+    "pont",
+    "sa40s67a9",
+    "saba"
+   ]
+  },
+  {
+   "brand": [
+    "oneplus"
+   ],
+   "config": {
+    "live_tv_package": "com.heytap.tv.livetv"
+   },
+   "id": "oneplus-tv-cebu",
+   "tokens": [
+    "c00",
+    "cebu",
+    "m7632"
+   ]
+  },
+  {
+   "brand": [
+    "oneplus"
+   ],
+   "config": {
+    "live_tv_package": "com.oneplus.tv.android.livetv"
+   },
+   "id": "oneplus-tv-dosa",
+   "tokens": [
+    "dosa",
+    "oneplus_dosa_in"
+   ]
+  },
+  {
+   "brand": [
+    "panasonic"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.realtek.tv",
+     "com.apps.function.audiolink",
+     "com.apps.ota",
+     "com.google.android.play.games",
+     "com.google.android.videos",
+     "com.amazon.amazonvideo.livingroom",
+     "com.google.android.youtube.tvmusic"
+    ],
+    "live_tv_package": "com.realtek.tv",
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "panasonic-4ktv-3mup",
+   "tokens": [
+    "3mup",
+    "4ktv",
+    "4ktv-3mup",
+    "moka",
+    "r4_gtv",
+    "rtd2851m",
+    "taiwan",
+    "th-65mx660dx"
+   ]
+  },
+  {
+   "brand": [
+    "panasonic"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.smartdevice.livetv"
+    ],
+    "live_tv_package": "com.smartdevice.livetv",
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "panasonic-4ktv-3su",
+   "tokens": [
+    "3su",
+    "4ktv",
+    "4ktv-3su",
+    "`thomson-sppl-4k-sw6h",
+    "skyworth-built",
+    "sw6h",
+    "~1.9"
+   ]
+  },
+  {
+   "brand": [
+    "peaq"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "reduced_motion": false
+   },
+   "id": "peaq-ptv43aqu-5023c",
+   "tokens": [
+    "43aqu-5023c",
+    "5023c",
+    "changhong",
+    "dundas",
+    "m7332",
+    "pont",
+    "ptv",
+    "ptv43aqu",
+    "reports"
+   ]
+  },
+  {
+   "brand": [
+    "philips"
+   ],
+   "config": {
+    "hidden_apps": [
+     "org.droidtv.zapster",
+     "org.droidtv.eum",
+     "org.droidtv.nettvbrowser"
+    ],
+    "live_tv_package": "org.droidtv.zapster"
+   },
+   "id": "philips-49pus6561",
+   "tokens": [
+    "49pus6561",
+    "55pus6581",
+    "mt5890",
+    "qm163e",
+    "qm16xe_u",
+    "turkey",
+    "vision"
+   ]
+  },
+  {
+   "brand": [
+    "philips"
+   ],
+   "config": {
+    "hidden_apps": [
+     "org.droidtv.playtv",
+     "org.droidtv.eum"
+    ],
+    "live_tv_package": "org.droidtv.playtv"
+   },
+   "id": "philips-55pos9002",
+   "tokens": [
+    "55pos9002",
+    "mt5891",
+    "ph7m_eu_5596",
+    "tpm171e",
+    "vision"
+   ]
+  },
+  {
+   "brand": [
+    "rca"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter",
+     "com.android.tv.settings",
+     "com.cltv.fast"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "reduced_motion": false
+   },
+   "id": "rca-ai-pont",
+   "tokens": [
+    "40-inch",
+    "aiwa",
+    "aw32b4smg",
+    "changhong",
+    "chiq",
+    "dvb92cq",
+    "dvb92yc",
+    "ergo",
+    "isdb92rc",
+    "pont",
+    "realme",
+    "redwood",
+    "sold"
+   ]
+  },
+  {
+   "brand": [
+    "rca"
+   ],
+   "config": {
+    "source_panel_action": "com.toptech.tv.action.INPUT_ACTIVITY",
+    "source_panel_service": "com.toptech.tvmenu/.input.InputActivity"
+   },
+   "id": "rca-rc50a21s-4ksm",
+   "tokens": [
+    "4ksm",
+    "home",
+    "mac6p",
+    "rc50a21s",
+    "rc50a21s-4ksm",
+    "rtd2851p",
+    "rtk2851p",
+    "toptech",
+    "zeasn"
+   ]
+  },
+  {
+   "brand": [
+    "redmi"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter",
+     "com.mitv.dream"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter"
+   },
+   "id": "redmi-mitv-mooq3",
+   "tokens": [
+    "mitv",
+    "mitv-mooq3",
+    "mooq3",
+    "tarzan"
+   ]
+  },
+  {
+   "brand": [
+    "rocktek"
+   ],
+   "config": {
+    "app_keys": [
+     "KEYCODE_GUIDE:com.seena.app"
+    ],
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "rocktek-gb1",
+   "tokens": [
+    "gb1"
+   ]
+  },
+  {
+   "brand": [
+    "rocktek"
+   ],
+   "config": {
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "rocktek-gx1",
+   "tokens": [
+    "gx1",
+    "hpr3a1325_4k"
+   ]
+  },
+  {
+   "brand": [
+    "sankey"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.android.traceur"
+    ],
+    "source_panel_service": "com.cvte.tv.globalui/.InputSourceActivity"
+   },
+   "id": "sankey-smart-tv-hi3751v350",
+   "tokens": [
+    "cvte",
+    "hi3751v350",
+    "smart_tv"
+   ]
+  },
+  {
+   "brand": [
+    "sber"
+   ],
+   "config": {
+    "app_labels": [
+     "ru.sberdevices.starlauncher=\u0421\u0430\u043b\u044e\u0442 \u0422\u0412",
+     "ru.sberdevices.starmarket=\u041a\u0430\u0442\u0430\u043b\u043e\u0433 \u0421\u0431\u0435\u0440\u0430",
+     "ru.sberdevices.settings=\u0426\u0435\u043d\u0442\u0440 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f"
+    ],
+    "hidden_apps": [
+     "com.cvte.fac.menu",
+     "com.stb.factorymenu",
+     "ru.sberdevices.webview",
+     "ru.sberdevices.starcleaner",
+     "ru.sberdevices.starprofile",
+     "ru.sberdevices.parentcontrol",
+     "ru.sberdevices.starkidsroom.prod",
+     "com.sberbank.settings",
+     "com.android.tv.settings"
+    ]
+   },
+   "id": "sber-salute-tv-at30a6",
+   "tokens": [
+    "at30a6",
+    "cvte",
+    "salute",
+    "t962d4",
+    "tp.t962d4.pc756"
+   ]
+  },
+  {
+   "brand": [
+    "sber"
+   ],
+   "config": {
+    "app_labels": [
+     "ru.sberdevices.starlauncher=\u0421\u0430\u043b\u044e\u0442 \u0422\u0412",
+     "ru.sberdevices.starmarket=\u041a\u0430\u0442\u0430\u043b\u043e\u0433 \u0421\u0431\u0435\u0440\u0430",
+     "ru.sberdevices.settings=\u0426\u0435\u043d\u0442\u0440 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f"
+    ],
+    "hidden_apps": [
+     "com.cvte.fac.menu",
+     "com.cvte.factory.at",
+     "com.cvte.license.at",
+     "com.cvte.tv.tools",
+     "ru.sberdevices.TvFactoryHelper",
+     "ru.sberdevices.webview",
+     "com.sberbank.settings",
+     "com.android.tv.settings",
+     "ru.more.play",
+     "ru.sberdevices.subscriptions",
+     "ru.sberdevices.smarthome.promo",
+     "ru.sberdevices.tv",
+     "ru.sberdevices.rcfupdater",
+     "ru.sberdevices.openbeta",
+     "ru.sberdevices.starkidsroom.prod"
+    ]
+   },
+   "id": "sber-salute-tv-pb766",
+   "tokens": [
+    "cvte",
+    "mt9256",
+    "pb766",
+    "salute",
+    "tpd.mt9216.pb766"
+   ]
+  },
+  {
+   "brand": [
+    "seleco"
+   ],
+   "config": {
+    "app_labels": [
+     "com.toptech.tvmenu=Live TV",
+     "com.amazon.amazonvideo.livingroom=Prime Video"
+    ],
+    "hidden_apps": [
+     "cn.zeasn.launcher.vstoresubclient.toptech"
+    ],
+    "source_panel_service": "com.toptech.tvmenu/.input.InputActivity"
+   },
+   "id": "seleco-tv39020hda9smart",
+   "tokens": [
+    "at_smartscreen",
+    "rtk2842p",
+    "toptech",
+    "tv39020hda9smart",
+    "zeasn"
+   ]
+  },
+  {
+   "brand": [
+    "sharp"
+   ],
+   "config": {
+    "live_tv_package": "jp.co.sharp.av.android.aquostvapp"
+   },
+   "id": "sharp-4t-c43dl1",
+   "tokens": [
+    "4t-c43dl1",
+    "aquos",
+    "aquos-tvj21-2",
+    "c43dl1",
+    "tcve2uj"
+   ]
+  },
+  {
+   "brand": [
+    "skyworth"
+   ],
+   "config": {
+    "coocaa_sources": true,
+    "source_panel_action": "com.coocaa.intent.action.CONTROL_CENTER",
+    "source_panel_extra": "control_center_command=100",
+    "source_panel_service": "com.coocaa.os.ccosservice/com.coocaa.os.centerintegration.service.CenterService"
+   },
+   "id": "skyworth-7s60-a5",
+   "tokens": [
+    "7s60",
+    "7s60_a5",
+    "market",
+    "sky8s34"
+   ]
+  },
+  {
+   "brand": [
+    "skyworth"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.skyworth.tv"
+    ],
+    "live_tv_package": "com.skyworth.tv"
+   },
+   "id": "skyworth-7t861-a23",
+   "tokens": [
+    "7t861",
+    "7t861_a23",
+    "a23",
+    "market",
+    "mt9638"
+   ]
+  },
+  {
+   "brand": [
+    "skyworth"
+   ],
+   "config": {
+    "app_keys": [
+     "390:home"
+    ],
+    "hidden_apps": [
+     "com.smartdevice.livetv"
+    ],
+    "live_tv_package": "com.smartdevice.livetv"
+   },
+   "id": "skyworth-swtv-20sa-pro",
+   "tokens": [
+    "20sa",
+    "m7332",
+    "sw4h_ff",
+    "swtv",
+    "swtv-20sa-pro"
+   ]
+  },
+  {
+   "brand": [
+    "sony"
+   ],
+   "config": {
+    "app_keys": [
+     "scan:646:settings",
+     "scan:485:com.google.android.youtube.tv",
+     "scan:490:com.amazon.amazonvideo.livingroom"
+    ],
+    "hidden_apps": [
+     "com.sony.dtv.tvx"
+    ],
+    "live_tv_package": "com.sony.dtv.tvx",
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "sony-bravia-4k-vh21",
+   "tokens": [
+    "bravia",
+    "bravia_vh21",
+    "kd-65x85k",
+    "mt5895",
+    "vh21"
+   ]
+  },
+  {
+   "brand": [
+    "sony"
+   ],
+   "config": {
+    "app_keys": [
+     "scan:583:com.netflix.ninja",
+     "scan:485:com.google.android.youtube.tv",
+     "scan:490:com.amazon.amazonvideo.livingroom"
+    ],
+    "hidden_apps": [
+     "com.sony.dtv.tvlin"
+    ],
+    "live_tv_package": "com.sony.dtv.tvlin"
+   },
+   "id": "sony-bravia-ae1",
+   "tokens": [
+    "a95l",
+    "ae1",
+    "bravia",
+    "bravia_ae_m6l",
+    "mt5838",
+    "qd-oled",
+    "reports",
+    "xr-55a95l"
+   ]
+  },
+  {
+   "brand": [
+    "sony"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.android.tv",
+     "com.realtek.tv.atv"
+    ],
+    "live_tv_package": "com.realtek.tv.atv"
+   },
+   "id": "sony-bravia-vu1",
+   "tokens": [
+    "bravia",
+    "bravia_vu1_uc",
+    "kd-43x7500h",
+    "kd-65x750h",
+    "vu1"
+   ]
+  },
+  {
+   "brand": [
+    "sony"
+   ],
+   "config": {
+    "app_keys": [
+     "scan:758:com.netflix.ninja",
+     "scan:569:com.google.android.youtube.tv",
+     "scan:653:com.google.android.youtube.tvmusic",
+     "scan:652:com.amazon.amazonvideo.livingroom"
+    ],
+    "hidden_apps": [
+     "com.android.tv",
+     "com.sony.dtv.ecodashboard",
+     "com.sony.dtv.m2.seeds.iot",
+     "com.sony.dtv.timers",
+     "com.google.android.videos"
+    ],
+    "live_tv_package": "com.android.tv"
+   },
+   "id": "sony-bravia-vu3",
+   "tokens": [
+    "bravia",
+    "bravia_vu3_4k",
+    "kd-55x75k",
+    "rtd2885m",
+    "vu3"
+   ]
+  },
+  {
+   "brand": [
+    "sony"
+   ],
+   "config": {
+    "live_tv_package": "com.sony.dtv.tvx"
+   },
+   "id": "sony-kdl-43w950d",
+   "tokens": [
+    "43w950d",
+    "bravia",
+    "kdl",
+    "kdl-43w950d",
+    "svp-dtv15"
+   ]
+  },
+  {
+   "brand": [
+    "sony"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.sony.dtv.tvx",
+     "com.sony.dtv.tvxlauncher.programguide",
+     "com.ndcsolution.androidtv.leankeykeyboard"
+    ],
+    "inputs_connected_only": true,
+    "live_tv_package": "com.sony.dtv.tvx"
+   },
+   "id": "sony-xbr-x805g-sa",
+   "tokens": [
+    "bravia",
+    "bravia_atv3_4k",
+    "mt5891",
+    "x805g",
+    "xbr",
+    "xbr-x805g"
+   ]
+  },
+  {
+   "brand": [
+    "skyworth"
+   ],
+   "config": {
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "strong-leap-s3",
+   "tokens": [
+    "leap",
+    "leap-s3",
+    "s905y4",
+    "skyworthdigital",
+    "strong",
+    "yda"
+   ]
+  },
+  {
+   "brand": [
+    "strong"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "reduced_motion": false
+   },
+   "id": "strong-srt-43ud6593",
+   "tokens": [
+    "43ud6593",
+    "changhong",
+    "dundas",
+    "m7332",
+    "pont",
+    "reports",
+    "srt"
+   ]
+  },
+  {
+   "brand": [
+    "sunwind"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.stb.factorymenu",
+     "de.szalkowski.activitylauncher",
+     "com.mediatek.androidbox"
+    ],
+    "input_uri_scheme": "live-tv",
+    "reduced_motion": true
+   },
+   "id": "sunwind-sun-led32xs305",
+   "tokens": [
+    "cvte",
+    "led32xs305",
+    "mt9256",
+    "sun",
+    "sun-led32xs305",
+    "tp.mt9256.pb721",
+    "yandex",
+    "yaos"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "4062:com.netflix.ninja",
+     "4065:com.google.android.youtube.tv",
+     "4099:com.amazon.amazonvideo.livingroom"
+    ],
+    "hidden_apps": [
+     "com.tcl.tv"
+    ],
+    "live_tv_package": "com.tcl.tv",
+    "settings_key_keycodes": [
+     83,
+     4020,
+     4077
+    ]
+   },
+   "id": "tcl-43c645",
+   "tokens": [
+    "43c645",
+    "50c635",
+    "55c645",
+    "60c635",
+    "g03_4k_gb",
+    "r51mt05",
+    "rtd2851",
+    "rtd288o",
+    "v8-r51mt05-lf1v652"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "4062:com.netflix.ninja",
+     "4065:com.google.android.youtube.tv",
+     "4001:guide:com.tcl.tv",
+     "83:settings"
+    ],
+    "hidden_apps": [
+     "com.tcl.tv"
+    ],
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-55a300w",
+   "tokens": [
+    "55a300w",
+    "g08",
+    "g08_4k_us_nf",
+    "mt9653",
+    "picture-frame"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.tcl.tv",
+     "com.tcl.gallery"
+    ],
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-55c745",
+   "tokens": [
+    "55c745",
+    "g08",
+    "g08_4k_gb",
+    "tcl9618"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "4062:com.netflix.ninja",
+     "190:com.google.android.youtube.tv"
+    ],
+    "hidden_apps": [
+     "com.tcl.tv",
+     "com.tcl.suspension"
+    ],
+    "live_tv_package": "com.tcl.tv",
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "tcl-55c7k-uk",
+   "tokens": [
+    "55c7k",
+    "g08",
+    "qd-mini",
+    "tcl9618"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-55p638",
+   "tokens": [
+    "55p638",
+    "beyondtv4"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "4062:com.netflix.ninja",
+     "4065:com.google.android.youtube.tv",
+     "4099:com.amazon.amazonvideo.livingroom"
+    ],
+    "hidden_apps": [
+     "com.tcl.tv"
+    ],
+    "live_tv_package": "com.tcl.tv",
+    "settings_key_keycodes": [
+     4077
+    ]
+   },
+   "id": "tcl-65c735",
+   "tokens": [
+    "55c728",
+    "65c735",
+    "65c745",
+    "65c935",
+    "g05",
+    "turkey"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.tcl.tv",
+     "com.tcl.suspension",
+     "com.tcl.dashboard",
+     "com.tcl.t_solo"
+    ],
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-65c7k-google-tv",
+   "tokens": [
+    "65c7k",
+    "g08",
+    "g08_4k_gb",
+    "mt5896"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-65c7l-google-tv",
+   "tokens": [
+    "65c7l",
+    "g08",
+    "g08_4k_gb",
+    "tcl9618"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "83:com.android.tv.settings",
+     "4001:com.tcl.tv",
+     "4062:com.netflix.ninja",
+     "4099:com.amazon.amazonvideo.livingroom",
+     "190:com.google.android.youtube.tv"
+    ],
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-65c8l-google-tv",
+   "tokens": [
+    "65c8l",
+    "g17",
+    "g17_4k_gb",
+    "tcl9655"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.tcl.tv"
+    ],
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-65ep68",
+   "tokens": [
+    "65ep68",
+    "beyondtv",
+    "rtd2851",
+    "rtd285o",
+    "v8-r851t02-lf1v722"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "190:com.google.android.youtube.tv",
+     "4062:com.netflix.ninja",
+     "4099:com.amazon.amazonvideo.livingroom"
+    ],
+    "hidden_apps": [
+     "com.tcl.tv"
+    ],
+    "live_tv_package": "com.tcl.tv",
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "tcl-65mqled80-google-tv",
+   "tokens": [
+    "65mqled80",
+    "g08",
+    "norway",
+    "tcl9618"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "83:com.android.tv.settings",
+     "4001:com.tcl.tv",
+     "4062:com.netflix.ninja",
+     "4099:com.amazon.amazonvideo.livingroom",
+     "190:com.google.android.youtube.tv"
+    ],
+    "live_tv_package": "com.tcl.tv",
+    "power_on_home": true
+   },
+   "id": "tcl-65qm8l-google-tv",
+   "tokens": [
+    "65qm8l",
+    "g17",
+    "g17_4k_us",
+    "tcl9655"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.tcl.tv"
+    ],
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-75p635",
+   "tokens": [
+    "75p635",
+    "ar07",
+    "beyondtv4",
+    "g07"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "live_tv_package": "com.tcl.tv",
+    "reduced_motion": true
+   },
+   "id": "tcl-beyondtv4-uk",
+   "tokens": [
+    "ar05",
+    "beyondtv4",
+    "beyondtv6",
+    "freeview",
+    "play",
+    "rtd288o"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "4062:com.netflix.ninja",
+     "4099:com.amazon.amazonvideo.livingroom",
+     "190:com.google.android.youtube.tv"
+    ],
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "tcl-c845x2-google-tv",
+   "tokens": [
+    "55c845x2",
+    "75c845x2",
+    "c845x2",
+    "g08_4k_gb",
+    "tcl9618"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "4062:com.netflix.ninja",
+     "4099:com.amazon.amazonvideo.livingroom",
+     "190:com.google.android.youtube.tv"
+    ],
+    "hidden_apps": [
+     "com.tcl.tv"
+    ],
+    "live_tv_package": "com.tcl.tv",
+    "settings_key_keycodes": [
+     83
+    ],
+    "settings_key_panel": true
+   },
+   "id": "tcl-c89b-google-tv",
+   "tokens": [
+    "65c89k",
+    "c855",
+    "c89b",
+    "g08",
+    "g08_4k_gb",
+    "local",
+    "tcl9618"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "KEYCODE_TCL_NETFLIX:com.netflix.ninja",
+     "KEYCODE_TCL_YOUTUBE:com.google.android.youtube.tv",
+     "4099:com.amazon.amazonvideo.livingroom"
+    ],
+    "live_tv_package": "com.tcl.tv",
+    "settings_key_keycodes": [
+     4077
+    ],
+    "settings_key_panel": true
+   },
+   "id": "tcl-g03-google-tv",
+   "tokens": [
+    "43p739",
+    "50c641",
+    "50s546",
+    "beyondtv4",
+    "g03",
+    "g03_4k_gb",
+    "g03_4k_us",
+    "lf1v652",
+    "lf1v813",
+    "r51mt05",
+    "v8-r51mt05-lf1v620"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.tcl.tv"
+    ],
+    "key_filter": false,
+    "reduced_motion": true,
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "tcl-g06-us-google-tv",
+   "tokens": [
+    "ar2101",
+    "g06",
+    "g06_2k_us",
+    "mt9221",
+    "t221",
+    "v8-t221t04-lf1v122"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "4001:input:com.tcl.tvinput/.TvPassThroughService/HW15",
+     "4065:org.smarttube.stable",
+     "4062:com.plexapp.android"
+    ],
+    "hidden_apps": [
+     "com.tcl.tv",
+     "com.tcl.suspension",
+     "com.tcl.partnercustomizer"
+    ],
+    "settings_key_keycodes": [
+     83
+    ],
+    "settings_key_panel": false
+   },
+   "id": "tcl-g08-au-android12",
+   "tokens": [
+    "android12",
+    "australian",
+    "g08",
+    "g08_4k_gb"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "4062:com.netflix.ninja",
+     "4099:com.amazon.amazonvideo.livingroom",
+     "4065:com.google.android.youtube.tv"
+    ],
+    "hidden_apps": [
+     "com.tcl.tv",
+     "com.tcl.suspension"
+    ],
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-g09-google-tv",
+   "tokens": [
+    "g09",
+    "g09_4k_gb",
+    "t5m"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "190:com.google.android.youtube.tv"
+    ],
+    "app_labels": [
+     "com.tcl.tv=Live TV",
+     "com.nousguide.android.orftvthek=ORF ON"
+    ],
+    "hidden_apps": [
+     "com.tcl.dashboard",
+     "com.tcl.partnercustomizer",
+     "com.tcl.suspension",
+     "com.tcl.gallery"
+    ],
+    "live_tv_package": "com.tcl.tv",
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "tcl-q7c-google-tv",
+   "tokens": [
+    "european",
+    "g08",
+    "g08_4k_gb",
+    "q7c",
+    "tcl9618"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "190:com.google.android.youtube.tv"
+    ],
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "tcl-qm6k-google-tv",
+   "tokens": [
+    "g08",
+    "qm6k",
+    "tcl9618"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "source_panel_action": "com.tcl.insrc.SHOW_WINDOW",
+    "source_panel_service": "com.tcl.settings/.ShowWindowService",
+    "stock_home_redirect": "com.tcl.cyberui"
+   },
+   "id": "tcl-tc8000-ay30a2",
+   "tokens": [
+    "ay30a2",
+    "ohm",
+    "tc8000",
+    "tc8000_ay30a2"
+   ]
+  },
+  {
+   "brand": [
+    "systems",
+    "td"
+   ],
+   "config": {
+    "app_labels": [
+     "com.mediatek.wwtv.tvcenter=TDT"
+    ],
+    "hidden_apps": [
+     "com.mitv.gallery"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter",
+    "power_on_home": true
+   },
+   "id": "tdsystems-ch17f40s-redwood",
+   "tokens": [
+    "ch17f40s",
+    "changhong",
+    "dvb92td",
+    "redwood",
+    "tdsystems"
+   ]
+  },
+  {
+   "brand": [
+    "thomson"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.realtek.tv"
+    ],
+    "live_tv_package": "com.realtek.tv"
+   },
+   "id": "thomson-43rt1055",
+   "tokens": [
+    "43rt1055",
+    "rtd2841a",
+    "sauve",
+    "sppl-built"
+   ]
+  },
+  {
+   "brand": [
+    "thomson"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.smartdevice.livetv"
+    ],
+    "live_tv_package": "com.smartdevice.livetv",
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "thomson-sppl-4k-sw6h",
+   "tokens": [
+    "`skyworth-sw-22sa",
+    "skyworth",
+    "sppl",
+    "sw6h",
+    "~1.9"
+   ]
+  },
+  {
+   "brand": [
+    "tuvio"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter"
+    ],
+    "live_tv_package": "com.mediatek.wwtv.tvcenter"
+   },
+   "id": "tuvio-td43ufbcv5",
+   "tokens": [
+    "changhong",
+    "dvb96",
+    "m7632",
+    "pont",
+    "td43ufbcv5",
+    "td50ufbcv5"
+   ]
+  },
+  {
+   "brand": [
+    "vidda"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.android.calendar",
+     "com.android.camera2",
+     "com.android.contacts",
+     "com.android.music",
+     "com.android.deskclock",
+     "com.android.settings",
+     "com.hisense.tv.catlog",
+     "com.hisense.systeminfo",
+     "com.hisense.hitv.hicloud.account",
+     "com.hispeech.ai.area"
+    ],
+    "power_on_home_always": true,
+    "source_panel_action": "com.hisense.tv.start_inputs",
+    "source_panel_service": "com.hisense.tv.inputs/com.hisense.tv.InputsUIService"
+   },
+   "id": "vidda-c1s-mt9669",
+   "tokens": [
+    "c1s",
+    "device",
+    "juui",
+    "m7642",
+    "mt9669",
+    "projectors",
+    "vidaa_tv"
+   ]
+  },
+  {
+   "brand": [
+    "vu"
+   ],
+   "config": {
+    "app_keys": [
+     "190:com.google.android.youtube.tv",
+     "191:com.netflix.ninja"
+    ],
+    "app_labels": [
+     "com.mpiero.android.tvhdmi1=HDMI 1"
+    ],
+    "hidden_apps": [
+     "com.realtek.tv",
+     "com.realtek.miracast",
+     "com.rtk.mediabrowser"
+    ],
+    "key_filter": true,
+    "live_tv_package": "com.realtek.tv"
+   },
+   "id": "vu-vibe-tv",
+   "tokens": [
+    "bandra",
+    "konka",
+    "vibe"
+   ]
+  },
+  {
+   "brand": [
+    "xgimi"
+   ],
+   "config": {
+    "app_keys": [
+     "KEYCODE_F4:com.google.android.youtube.tv",
+     "KEYCODE_F9:com.netflix.ninja",
+     "KEYCODE_F8:com.amazon.amazonvideo.livingroom"
+    ],
+    "settings_key_keycodes": [
+     83
+    ],
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "xgimi-mogo-4",
+   "tokens": [
+    "altai",
+    "mogo",
+    "wk08k"
+   ]
+  },
+  {
+   "brand": [
+    "xgimi"
+   ],
+   "config": {
+    "key_filter": false,
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "xgimi-mogo-4-laser",
+   "tokens": [
+    "altai",
+    "mogo",
+    "wk03k"
+   ]
+  },
+  {
+   "brand": [
+    "xgimi"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.xgimi.home",
+     "com.android.newsettings",
+     "com.xgimi.newappmarket",
+     "com.xgimi.account",
+     "com.xgimi.user",
+     "com.xgimi.payview",
+     "com.xgimi.upgrade",
+     "com.xgimi.adservice",
+     "com.xgimi.instruction30",
+     "com.xgimi.bootwizard",
+     "com.xgimi.minitvfactory",
+     "mediatek.factorymenu.ui",
+     "com.xgimi.atmosphere",
+     "com.xgimi.doubanfm",
+     "com.netease.cloudmusic.tv",
+     "com.ktcp.tvvideo",
+     "com.hunantv.license",
+     "cn.com.wasu.main",
+     "com.gitv.dvb.live",
+     "com.xgimi.gimiplayer",
+     "com.xgimi.xhplayer",
+     "com.xgimi.stream.video",
+     "com.smarttv.manager"
+    ],
+    "input_action": "com.xgimi.action.hdmiPlayer",
+    "key_filter": false,
+    "stock_home_redirect": "com.xgimi.home"
+   },
+   "id": "xgimi-rs10-ultra",
+   "tokens": [
+    "device",
+    "m7642",
+    "pig_chivalrous",
+    "rs10"
+   ]
+  },
+  {
+   "brand": [
+    "xgimi"
+   ],
+   "config": {
+    "app_keys": [
+     "KEYCODE_F4:com.google.android.youtube.tv",
+     "KEYCODE_F9:com.netflix.ninja",
+     "KEYCODE_F8:com.amazon.amazonvideo.livingroom"
+    ],
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter",
+     "com.mitv.gallery",
+     "com.android.tv.settings"
+    ],
+    "settings_key_keycodes": [
+     83
+    ],
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "xgimi-vibe-one",
+   "tokens": [
+    "altai",
+    "m7332",
+    "one",
+    "vibe",
+    "wm03h"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "app_keys": [
+     "KEYCODE_BUTTON_3:com.google.android.youtube.tv",
+     "KEYCODE_BUTTON_7:com.amazon.amazonvideo.livingroom",
+     "KEYCODE_ALL_APPS:home"
+    ]
+   },
+   "id": "xiaomi-mitv-afmu0",
+   "tokens": [
+    "3rd",
+    "afmu0",
+    "gen",
+    "mitv",
+    "mitv-afmu0",
+    "twilight"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "app_keys": [
+     "KEYCODE_BUTTON_3:com.google.android.youtube.tv",
+     "KEYCODE_BUTTON_6:com.netflix.ninja",
+     "KEYCODE_BUTTON_7:com.amazon.amazonvideo.livingroom"
+    ]
+   },
+   "id": "xiaomi-mitv-afmu1",
+   "tokens": [
+    "2nd",
+    "adastra",
+    "afmu1",
+    "gen",
+    "mitv",
+    "mitv-afmu1",
+    "twilight"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "input_action": "com.xiaomi.mitv.tvplayer.EXTSRC_PLAY",
+    "input_sources": [
+     "HW5=23",
+     "HW6=24",
+     "HW7=25",
+     "HW1=2"
+    ]
+   },
+   "id": "xiaomi-mitv-astp0",
+   "tokens": [
+    "astp0",
+    "l55m7-ea",
+    "mitv",
+    "mitv-astp0",
+    "mulan",
+    "sold"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "input_action": "com.xiaomi.mitv.tvplayer.EXTSRC_PLAY",
+    "input_sources": [
+     "HW5=23",
+     "HW6=24"
+    ]
+   },
+   "id": "xiaomi-mitv-astp1",
+   "tokens": [
+    "2.40.641.0514.cn",
+    "720p",
+    "astp1",
+    "maverick",
+    "mitv",
+    "mitv-astp1"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.android.tv"
+    ],
+    "live_tv_package": "com.android.tv"
+   },
+   "id": "xiaomi-mitv-axso1",
+   "tokens": [
+    "axso1",
+    "dangalfhd",
+    "mitv",
+    "mitv-axso1"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "live_tv_package": "com.mediatek.wwtv.tvcenter"
+   },
+   "id": "xiaomi-mitv-mooq2",
+   "tokens": [
+    "croods",
+    "mitv",
+    "mitv-mooq2",
+    "mooq2"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "app_keys": [
+     "190:org.smarttube.beta"
+    ],
+    "hidden_apps": [
+     "com.mitv.livetv"
+    ],
+    "live_tv_package": "com.mitv.livetv"
+   },
+   "id": "xiaomi-mitv-moor0",
+   "tokens": [
+    "mitv",
+    "mitv-moor0",
+    "moor0",
+    "venom"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "app_keys": [
+     "190:com.google.android.youtube.tv",
+     "193:com.netflix.ninja",
+     "194:com.amazon.amazonvideo.livingroom"
+    ],
+    "live_tv_package": "com.mitv.livetv"
+   },
+   "id": "xiaomi-mitv-mosr4",
+   "tokens": [
+    "irobot",
+    "mitv",
+    "mitv-mosr4",
+    "mosr4"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "input_action": "com.xiaomi.mitv.tvplayer.EXTSRC_PLAY",
+    "input_sources": [
+     "HW5=23",
+     "HW6=24",
+     "HW7=25",
+     "HW2=2"
+    ]
+   },
+   "id": "xiaomi-mitv-mteq0",
+   "tokens": [
+    "baymax",
+    "mitv",
+    "mitv-mteq0",
+    "mteq0"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter"
+    ],
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "xiaomi-smart-projector-c025rgn",
+   "tokens": [
+    "c025rgn",
+    "formovie",
+    "odm",
+    "t32",
+    "tianshan"
+   ]
+  },
+  {
+   "brand": [
+    "xiaomi"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.mediatek.wwtv.tvcenter"
+    ],
+    "stock_home_redirect": "com.google.android.apps.tv.launcherx"
+   },
+   "id": "xiaomi-smart-projector-l1-pro-tianshan",
+   "tokens": [
+    "c045rgn",
+    "formovie",
+    "odm",
+    "t32",
+    "tianshan"
+   ]
+  },
+  {
+   "brand": [
+    "x.vision"
+   ],
+   "config": {
+    "app_labels": [
+     "com.cvte.tv.setting=TV",
+     "com.android.documentsui=Files"
+    ],
+    "hidden_apps": [
+     "com.android.traceur"
+    ],
+    "key_filter": false,
+    "source_panel_service": "com.cvte.tv.globalui/.InputSourceActivity",
+    "stock_home_redirect": "com.cvte.tv.launcher.space"
+   },
+   "id": "xvision-50xyu765",
+   "tokens": [
+    "50xyu765",
+    "cvte",
+    "iran",
+    "m7332",
+    "maadiran",
+    "tp.mt9632.pc752",
+    "xvision",
+    "xyu"
+   ]
+  }
+ ],
+ "source": "cleanyourtv examples/ (MIT)"
+}

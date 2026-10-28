@@ -1,0 +1,41 @@
+# Every Monday: bring in the TVs the cleanyourtv community tested that week (tools/sync_upstream.py), rebuild the
+# TV profiles and tables, run the tests, and commit only when they pass. It can also be run by hand from Actions.
+name: Weekly TV sync from cleanyourtv
+
+on:
+  schedule:
+    - cron: "30 3 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Bring in new and updated TV lists
+        id: sync
+        run: |
+          python3 tools/sync_upstream.py | tee sync.txt
+          echo "summary=$(cat sync.txt)" >> "$GITHUB_OUTPUT"
+          rm sync.txt
+      # The checks every synced list must pass: list format, core packages never disabled, links, privacy (no IPs,
+      # names or serials), the notes index and the config keys. Tests of one note's wording stay in cleanyourtv.
+      - name: Tests
+        run: |
+          python3 -m venv tools/venv
+          tools/venv/bin/pip install -q -r tools/requirements.txt
+          tools/venv/bin/python -m unittest tests.test_examples tests.test_markdown_links tests.test_privacy_audit tests.test_core_packages tests.test_device_notes_index tests.test_example_config_keys tests.test_debloat_paths tests.test_list_header_commands tests.test_tv_json_google_tv_os
+      - name: Commit
+        run: |
+          git config user.name "Hushtile sync"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A examples docs/devices launcher/app/src/main/assets/profiles.json tools/upstream_manifest.txt
+          if git diff --cached --quiet; then echo "Nothing new this week."; exit 0; fi
+          git commit -m "examples: weekly sync from cleanyourtv (${{ steps.sync.outputs.summary }})"
+          git push

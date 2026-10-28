@@ -1,0 +1,33 @@
+# Nokia ATV R1 (SCBC, device R1, board rt41), Android TV 11, firmware RTT7.220308.001
+# Realtek rtd284o, UI at 1280x720 (213 dpi), ~1.5 GB RAM, India. Classic Android TV home, not Google TV.
+# Stock launcher: com.google.android.tvlauncher (disabled only after the new launcher is Home). Live TV: com.android.tv.
+#
+# Apply:   TV_HOST=<tv ip> tools/disable.sh examples/nokia-atv-r1/debloat.txt
+# Undo:    TV_HOST=<tv ip> tools/restore.sh examples/nokia-atv-r1/debloat.txt
+# Everything is DISABLED, not uninstalled. Comment out any line you want to keep.
+#
+# Kept on purpose: Live TV (com.android.tv) and the Realtek TV stack behind HDMI, the TV settings
+# (com.realtek.tv.settings, Picture and Sound), the remote services, the keyboard, Play Store and Play Services,
+# and the firmware updater.
+
+# SCBC ads, channels and promotions
+com.apps.channels
+com.apps.eshow
+com.apps.esticker
+com.realtek.leanbacklauncher.partnercustomizer
+android.autoinstalls.config.scbc.device
+# Consent prompt, browser engine and feedback
+com.apps.function.gdpr
+com.vewd.core.service
+com.google.android.feedback
+com.google.android.tvrecommendations
+# Small extras nobody used
+com.apps.clear
+com.apps.wifihotspot
+com.apps.networkspeed
+com.apps.timeclock
+com.android.printspooler
+com.google.android.apps.nbu.smartconnect.tv
+# Off by choice
+com.google.android.videos
+com.google.android.play.games

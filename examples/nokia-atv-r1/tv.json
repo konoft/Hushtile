@@ -1,0 +1,6 @@
+{
+  "tv": "Nokia ATV R1 (SCBC, R1, rt41, Realtek rtd284o, 1280x720, 1.5 GB), India",
+  "os": "Android TV 11",
+  "brand": "Nokia",
+  "notes": "SCBC ad and channel apps, GDPR prompt, Vewd, feedback, recommendations, device auto-installs, cleaner, hotspot, print spooler, speed test and clock off; Play Movies and Play Games off by choice; firmware updater kept; Realtek picture and sound live in com.realtek.tv.settings; HDMI comes up at power-on, so power_on_home_always; reboot-checked"
+}

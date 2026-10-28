@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- The UI fonts, looked up through these strings so a locale can swap in a system family (values-vi, cleanyourtv#833).
+     Hushtile uses the TV's own Roboto family everywhere: it is hinted for screens, so small text stays crisp when
+     a 720p or 1080p picture is scaled up, where Outfit (a variable font without hinting) read soft. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ReferenceType">
+    <string name="font_body" translatable="false">sans-serif</string>
+    <string name="font_regular" translatable="false">sans-serif</string>
+    <string name="font_light" translatable="false">sans-serif-light</string>
+    <string name="font_extralight" translatable="false">sans-serif-thin</string>
+    <string name="font_medium" translatable="false">sans-serif-medium</string>
+</resources>

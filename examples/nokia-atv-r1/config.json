@@ -1,0 +1,5 @@
+{
+  "live_tv_package": "com.android.tv",
+  "power_on_home_always": true,
+  "hidden_apps": ["com.apps.function.audiolink"]
+}
