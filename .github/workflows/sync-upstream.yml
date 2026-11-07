@@ -22,7 +22,7 @@ jobs:
         id: sync
         run: |
           python3 tools/sync_upstream.py | tee sync.txt
-          echo "summary=$(cat sync.txt)" >> "$GITHUB_OUTPUT"
+          echo "summary=$(tail -n 1 sync.txt)" >> "$GITHUB_OUTPUT"
           rm sync.txt
       # The checks every synced list must pass: list format, core packages never disabled, links, privacy (no IPs,
       # names or serials), the notes index and the config keys. Tests of one note's wording stay in cleanyourtv.
