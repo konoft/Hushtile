@@ -26,6 +26,7 @@ docs/devices/hisense-hismart-2k-atv4-hamamatsucho.md
 docs/devices/hisense-led55mu7000u.md
 docs/devices/homatics-box-r-4k-plus.md
 docs/devices/hq-hqs32nkh.md
+docs/devices/hyundai-ai-pont-co-osaka.md
 docs/devices/iffalcon-32s45-c06.md
 docs/devices/insignia-ns-50f301na24.md
 docs/devices/insignia-ns55f301na22-aftdct31.md
@@ -105,6 +106,7 @@ docs/devices/whaley-wtv55k1.md
 docs/devices/xgimi-h1.md
 docs/devices/xgimi-xr13a.md
 docs/devices/xiaomi-l43m7-ea-antl0.md
+docs/devices/xiaomi-l55mb-fpeu.md
 docs/devices/xiaomi-mi-box-4s-pro-frozen.md
 docs/devices/xiaomi-mi-box-s-clock-screensaver.jpg
 docs/devices/xiaomi-mi-box-s-lumiflow-monastery.jpg
@@ -241,6 +243,8 @@ examples/cecotec-shandao/debloat.txt
 examples/cecotec-shandao/tv.json
 examples/challenger-32t22bt/debloat.txt
 examples/challenger-32t22bt/tv.json
+examples/challenger-r3/debloat.txt
+examples/challenger-r3/tv.json
 examples/chihi-hx-p30/config.json
 examples/chihi-hx-p30/debloat.txt
 examples/chihi-hx-p30/tv.json
@@ -280,6 +284,8 @@ examples/essentiel-b-r3/debloat.txt
 examples/essentiel-b-r3/tv.json
 examples/ffalcon-65s585c-pro/debloat.txt
 examples/ffalcon-65s585c-pro/tv.json
+examples/ffalcon-peng6-55s375c/debloat.txt
+examples/ffalcon-peng6-55s375c/tv.json
 examples/ffalcon-r34a0-cn/debloat.txt
 examples/ffalcon-r34a0-cn/tv.json
 examples/formovie-laser-4k-hanlla/debloat.txt
@@ -608,6 +614,9 @@ examples/philips-65oled907/debloat.txt
 examples/philips-65oled907/tv.json
 examples/philips-65pml9506/debloat.txt
 examples/philips-65pml9506/tv.json
+examples/philips-65pqt8169/README.md
+examples/philips-65pqt8169/debloat.txt
+examples/philips-65pqt8169/tv.json
 examples/philips-65pus8102/debloat.txt
 examples/philips-65pus8102/tv.json
 examples/philips-65pus9435/debloat.txt
@@ -1032,6 +1041,8 @@ examples/tcl-85rm7l-google-tv/debloat.txt
 examples/tcl-85rm7l-google-tv/tv.json
 examples/tcl-ak30a5/debloat.txt
 examples/tcl-ak30a5/tv.json
+examples/tcl-beyondtv-jp/debloat.txt
+examples/tcl-beyondtv-jp/tv.json
 examples/tcl-beyondtv-pl/debloat.txt
 examples/tcl-beyondtv-pl/tv.json
 examples/tcl-beyondtv-rt2851/debloat.txt
@@ -1149,6 +1160,8 @@ examples/toshiba-cosmos-android-tv/debloat.txt
 examples/toshiba-cosmos-android-tv/tv.json
 examples/toshiba-fire-tv-aftha004/debloat.txt
 examples/toshiba-fire-tv-aftha004/tv.json
+examples/toshiba-shandao-atv11/debloat.txt
+examples/toshiba-shandao-atv11/tv.json
 examples/turkcell-tv-plus-4k-box-dv6069y/debloat.txt
 examples/turkcell-tv-plus-4k-box-dv6069y/tv.json
 examples/tuvio-td43ufbcv5/README.md
@@ -1216,6 +1229,9 @@ examples/xiaomi-fire-tv-aftne4e43f/debloat.txt
 examples/xiaomi-fire-tv-aftne4e43f/tv.json
 examples/xiaomi-mi-box-3/debloat.txt
 examples/xiaomi-mi-box-3/tv.json
+examples/xiaomi-mi-box-4s-pro-frozen/README.md
+examples/xiaomi-mi-box-4s-pro-frozen/debloat.txt
+examples/xiaomi-mi-box-4s-pro-frozen/tv.json
 examples/xiaomi-mi-box-s-2nd-gen/README.md
 examples/xiaomi-mi-box-s-2nd-gen/debloat.txt
 examples/xiaomi-mi-box-s-2nd-gen/launcher-config.example.json
