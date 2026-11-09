@@ -81,6 +81,7 @@ docs/devices/tcl-55c728-g05-4k-gb.md
 docs/devices/tcl-55p635.md
 docs/devices/tcl-55p71b-g09-key-repeat.md
 docs/devices/tcl-55p71b-pro-g09.md
+docs/devices/tcl-55s450g.md
 docs/devices/tcl-75c63b-home.png
 docs/devices/tcl-75c63b.md
 docs/devices/tcl-75qm751g-qm7.md
@@ -95,8 +96,10 @@ docs/devices/thomson-40fg2s14w.md
 docs/devices/toshiba-32v35mp.md
 docs/devices/toshiba-55z500qf-cn.md
 docs/devices/toshiba-shandao-android11.md
+docs/devices/tuvio-tm55ufbcv5.md
 docs/devices/tuvio-tq55ufgsv1.md
 docs/devices/tvision-hub.md
+docs/devices/vu-smarttv-4k-ffm-remote-keys.md
 docs/devices/waipu-tv-box.md
 docs/devices/waipu-tv-stick.md
 docs/devices/wanbo-t2-max-android6.md
@@ -470,6 +473,9 @@ examples/kunft-k8415h40f/tv.json
 examples/liberton-ltv-24h01at/config.json
 examples/liberton-ltv-24h01at/debloat.txt
 examples/liberton-ltv-24h01at/tv.json
+examples/lumio-arc-5/README.md
+examples/lumio-arc-5/debloat.txt
+examples/lumio-arc-5/tv.json
 examples/lumio-vision-7/README.md
 examples/lumio-vision-7/debloat.txt
 examples/lumio-vision-7/tv.json
