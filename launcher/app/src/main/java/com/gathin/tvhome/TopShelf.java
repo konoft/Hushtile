@@ -12,6 +12,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.LruCache;
 import android.util.TypedValue;
@@ -75,6 +76,8 @@ final class TopShelf {
     private static final int CARD_W = 192, CARD_H = 108, GAP = 16;
     /** Posters are decoded about this wide (px): sharp on the 1080p screen at 1.08× focus, small in memory. */
     private static final int POSTER_PX = 420;
+    /** On a TV with little RAM, suggestions are first read this long after boot. */
+    private static final long BOOT_READ_AT_MS = 40_000;
     private static final Uri PREVIEWS = Uri.parse("content://android.media.tv/preview_program");
     private static final String[] COLUMNS = {"package_name", "title", "poster_art_uri", "thumbnail_uri", "intent_uri"};
 
@@ -96,12 +99,19 @@ final class TopShelf {
     private final LinearLayout row;
     private final ExecutorService io = Executors.newFixedThreadPool(3);
     private final Handler main = new Handler(Looper.getMainLooper());
-    private final LruCache<String, Bitmap> posters = new LruCache<String, Bitmap>(16 * 1024 * 1024) {
+    /** Low RAM (MemoryTidy.lowRam): a smaller poster cache, and no suggestions read while the TV is still booting. */
+    private final boolean lowRam;
+    /** A read put off until the boot settles; later refreshes wait for it. */
+    private boolean bootReadQueued;
+    private final LruCache<String, Bitmap> posters;
+    private static LruCache<String, Bitmap> posterCache(int bytes) {
+        return new LruCache<String, Bitmap>(bytes) {
         @Override
         protected int sizeOf(String key, Bitmap value) {
             return value.getByteCount();
         }
-    };
+        };
+    }
     private final Set<String> failed = Collections.synchronizedSet(new HashSet<>());
     private volatile Map<String, List<Item>> byPackage = Collections.emptyMap();
     private String shownPackage;
@@ -114,6 +124,8 @@ final class TopShelf {
     TopShelf(Activity activity, ViewGroup container, int index, float density, boolean animations, boolean pane, Host host) {
         this.pane = pane;
         this.activity = activity;
+        this.lowRam = MemoryTidy.lowRam(activity);
+        this.posters = posterCache((lowRam ? 6 : 16) * 1024 * 1024);
         this.host = host;
         this.density = density;
         this.animations = animations;
@@ -216,6 +228,18 @@ final class TopShelf {
 
     /** Reads every app's suggestions again, off the main thread; the shown row follows on onShelfLoaded. */
     void refresh() {
+        if (bootReadQueued) return;
+        long uptime = SystemClock.elapsedRealtime();
+        if (lowRam && MemoryTidy.booting(uptime) && uptime < BOOT_READ_AT_MS) {
+            // Every app's suggestions mean a burst of provider reads while the TV is still starting its services:
+            // Home's first frame comes first, the row a little after.
+            bootReadQueued = true;
+            main.postDelayed(() -> {
+                bootReadQueued = false;
+                refresh();
+            }, BOOT_READ_AT_MS - uptime);
+            return;
+        }
         io.execute(() -> {
             Map<String, List<Item>> read = read(activity.getContentResolver());
             main.post(() -> {

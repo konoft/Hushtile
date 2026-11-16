@@ -11,8 +11,8 @@ android {
         applicationId providers.gradleProperty('launcherApplicationId').getOrElse('com.hushtile.home')
         minSdk 26
         targetSdk 34
-        versionCode 22
-        versionName '1.7'
+        versionCode 23
+        versionName '1.8'
     }
 
     // A release key, when one is given (HUSHTILE_KEYSTORE and its passwords, from the environment or

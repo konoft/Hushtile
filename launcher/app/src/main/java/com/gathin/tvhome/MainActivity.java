@@ -292,6 +292,8 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     private View menuGlass;
     /** Between onResume and onPause: Home is the app in front, even while a system window has the focus. */
     private boolean homeInFront;
+    /** The settings Home started with, for MemoryTidy. */
+    private Config tidyConfig;
     /** Reorder mode is on (top-bar button). */
     private boolean reordering;
     /** Key of the tile being carried in reorder mode, or null. */
@@ -416,6 +418,12 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         density = getResources().getDisplayMetrics().density;
         // config.xml, overlaid by config.json from a pushed theme (see Config and tools/theme.sh).
         Config cfg = Config.load(this);
+        tidyConfig = cfg;
+        // tidy_memory: shortly after a cold boot, close the apps that started themselves (MemoryTidy).
+        long uptime = SystemClock.elapsedRealtime();
+        if (MemoryTidy.booting(uptime)) {
+            handler.postDelayed(() -> MemoryTidy.afterBoot(this, cfg), Math.max(0, MemoryTidy.bootPassDelay(uptime)));
+        }
         homeAppKeys = RemoteKeys.parseAppKeys(cfg.appKeys);
         appLibrarySelection = cfg.appLibrarySelection;
         libraryOkOpens = cfg.libraryOkOpens;
@@ -1069,6 +1077,7 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
         sky.update();
         wallpaperPlayer.start();
         handler.postDelayed(minuteTick, MINUTE_MS);
+        if (tidyConfig != null) root.post(() -> MemoryTidy.onHome(this, tidyConfig));
         if (festive && diya != null) {
             diya.start();
             LocalDate today = LocalDate.now();
@@ -1280,6 +1289,11 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
     @Override
     public void onTrimMemory(int level) {
         super.onTrimMemory(level);
+        // Low RAM: the hero art can be made again; let it go as soon as Home is hidden.
+        if (level >= TRIM_MEMORY_UI_HIDDEN && !started && MemoryTidy.lowRam(this)) {
+            heroArtCache.clear();
+            heroArtKey = null;
+        }
         // RUNNING_LOW and CRITICAL also arrive while Home is visible when an accessibility service keeps the
         // process in the foreground; never blank the screen the owner is looking at.
         if (!MemoryTrimPolicy.shouldRelease(level, started)) return;

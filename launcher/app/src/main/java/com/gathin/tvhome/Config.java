@@ -239,6 +239,12 @@ final class Config {
     boolean cinematicLayout;
     /** pane_layout's tool tiles: the first row (theme utility_apps) and the one More opens (utility_more_apps). */
     List<String> utilityApps = Collections.emptyList(), utilityMoreApps = Collections.emptyList();
+    /** tidy_memory (MemoryTidy): on a TV with little RAM, close apps left in the background. On by default. */
+    boolean tidyMemory = true;
+    /** tidy_memory_minutes: an app used within this many minutes is left running. */
+    int tidyMemoryMinutes = 20;
+    /** keep_running: packages tidy_memory never closes. */
+    List<String> keepRunning = Collections.emptyList();
     /** The cinematic shelf keeps the white focus highlight instead of the app's colour (config.xml, cinematic_white_focus). */
     final boolean cinematicWhiteFocus;
     /** The Wi-Fi pill's icon green while the TV is online (config.xml, wifi_status_color); false keeps it white. */
@@ -683,7 +689,13 @@ final class Config {
         boolean orderByUsage = false;
         int maxHomeApps = 0;
         List<String> utilityApps = Collections.emptyList(), utilityMoreApps = Collections.emptyList();
+        boolean tidyMemory = res.getBoolean(R.bool.tidy_memory);
+        int tidyMemoryMinutes = res.getInteger(R.integer.tidy_memory_minutes);
+        List<String> keepRunning = Collections.emptyList();
         if (json != null) {
+            tidyMemory = bool(json, "tidy_memory", tidyMemory);
+            tidyMemoryMinutes = integer(json, "tidy_memory_minutes", tidyMemoryMinutes, 1, 1440);
+            keepRunning = stringList(json, "keep_running", keepRunning);
             topShelf = bool(json, "top_shelf", topShelf);
             paneLayout = bool(json, "pane_layout", paneLayout);
             orderByUsage = bool(json, "order_by_usage", false);
@@ -724,6 +736,9 @@ final class Config {
         if (config.cinematicLayout) config.maxHomeApps = config.columns;
         config.utilityApps = Collections.unmodifiableList(utilityApps);
         config.utilityMoreApps = Collections.unmodifiableList(utilityMoreApps);
+        config.tidyMemory = tidyMemory;
+        config.tidyMemoryMinutes = tidyMemoryMinutes;
+        config.keepRunning = Collections.unmodifiableList(keepRunning);
         return config;
     }
 

@@ -31,6 +31,8 @@
          ADB with appops set com.hushtile.home SYSTEM_ALERT_WINDOW allow. -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- tidy_memory (MemoryTidy): end other apps' background processes on a TV short of RAM. -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
     <!-- order_by_usage: the TV's usage statistics, allowed over ADB (appops set ... GET_USAGE_STATS allow). -->
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
         tools:ignore="ProtectedPermissions" />
