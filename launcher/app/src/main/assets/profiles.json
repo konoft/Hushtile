@@ -127,7 +127,7 @@
     "live_tv_package": "com.smartdevice.livetv"
    },
    "needs": "com.smartdevice.livetv",
-   "tvs": 5
+   "tvs": 7
   },
   {
    "config": {
@@ -163,7 +163,7 @@
     "live_tv_package": "com.tcl.tv"
    },
    "needs": "com.tcl.tv",
-   "tvs": 18
+   "tvs": 21
   },
   {
    "config": {
@@ -191,6 +191,13 @@
     "live_tv_package": "org.droidtv.zapster"
    },
    "needs": "org.droidtv.zapster",
+   "tvs": 1
+  },
+  {
+   "config": {
+    "live_tv_package": "timvision.launcher"
+   },
+   "needs": "timvision.launcher",
    "tvs": 1
   }
  ],
@@ -599,6 +606,7 @@
    "id": "hisense-u75-hengshan",
    "tokens": [
     "65u7esg",
+    "65u86lua",
     "75u75n",
     "hengshan",
     "u75"
@@ -735,6 +743,24 @@
    "tokens": [
     "hy300",
     "rk3566_rgo"
+   ]
+  },
+  {
+   "brand": [
+    "metz"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.smartdevice.livetv"
+    ],
+    "live_tv_package": "com.smartdevice.livetv"
+   },
+   "id": "metz-43mub8000",
+   "tokens": [
+    "43mub8000",
+    "mt5886",
+    "skyworth",
+    "sw3h_atv"
    ]
   },
   {
@@ -1038,6 +1064,25 @@
   },
   {
    "brand": [
+    "realme"
+   ],
+   "config": {
+    "hidden_apps": [
+     "com.smartdevice.livetv",
+     "com.mediatek.wwtv.tvcenter",
+     "com.mitv.gallery"
+    ],
+    "live_tv_package": "com.smartdevice.livetv"
+   },
+   "id": "realme-smart-tv",
+   "tokens": [
+    "m7332",
+    "skyworth",
+    "sw4h_ff"
+   ]
+  },
+  {
+   "brand": [
     "redmi"
    ],
    "config": {
@@ -1085,6 +1130,30 @@
    "tokens": [
     "gx1",
     "hpr3a1325_4k"
+   ]
+  },
+  {
+   "brand": [
+    "sampo"
+   ],
+   "config": {
+    "app_keys": [
+     "172:com.mediatek.wwtv.tvcenter",
+     "front:172:home",
+     "288:screensaver"
+    ],
+    "settings_key_keycodes": [
+     83
+    ]
+   },
+   "id": "sampo-oled-55zw8212",
+   "tokens": [
+    "55zw8212",
+    "anaheim",
+    "oled-55zw8212",
+    "skyworth",
+    "swtv-22tw-4k",
+    "taiwan"
    ]
   },
   {
@@ -1193,6 +1262,26 @@
     "toptech",
     "tv39020hda9smart",
     "zeasn"
+   ]
+  },
+  {
+   "brand": [
+    "sharp"
+   ],
+   "config": {
+    "key_filter": true,
+    "power_on_home": true,
+    "power_on_home_always": true,
+    "settings_key_keycodes": [
+     83
+    ],
+    "settings_key_panel": true
+   },
+   "id": "sharp-32gf3265e",
+   "tokens": [
+    "32gf3265e",
+    "skyworth",
+    "umeda"
    ]
   },
   {
@@ -1481,6 +1570,30 @@
     "tcl"
    ],
    "config": {
+    "hidden_apps": [
+     "com.tcl.tv",
+     "com.tcl.suspension",
+     "com.tcl.partnercustomizer",
+     "tv.wuaki.apptv",
+     "com.tcl.usercenter"
+    ],
+    "live_tv_package": "com.tcl.tv",
+    "reduced_motion": true
+   },
+   "id": "tcl-32s6200",
+   "tokens": [
+    "32s6200",
+    "c06",
+    "c06_2k_gb",
+    "mt9221",
+    "s65a"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
     "app_keys": [
      "4062:com.netflix.ninja",
      "4065:com.google.android.youtube.tv",
@@ -1514,6 +1627,27 @@
     "tcl"
    ],
    "config": {
+    "hidden_apps": [
+     "com.tcl.tv",
+     "com.tcl.partnercustomizer"
+    ],
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-50s434",
+   "tokens": [
+    "4-series",
+    "50s434",
+    "ar02",
+    "beyondtv4",
+    "c03_4k_na",
+    "rtd288o"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
     "app_keys": [
      "4062:com.netflix.ninja",
      "4065:com.google.android.youtube.tv",
@@ -1523,15 +1657,22 @@
     "hidden_apps": [
      "com.tcl.tv"
     ],
-    "live_tv_package": "com.tcl.tv"
+    "live_tv_package": "com.tcl.tv",
+    "settings_key_keycodes": [
+     83,
+     4077
+    ]
    },
    "id": "tcl-55a300w",
    "tokens": [
+    "2023-2024",
     "55a300w",
+    "65a300w",
     "g08",
     "g08_4k_us_nf",
     "mt9653",
-    "picture-frame"
+    "picture-frame",
+    "tvs"
    ]
   },
   {
@@ -1613,6 +1754,7 @@
    "id": "tcl-65c735",
    "tokens": [
     "55c728",
+    "55c735",
     "65c735",
     "65c745",
     "65c935",
@@ -1826,6 +1968,7 @@
    },
    "id": "tcl-c89b-google-tv",
    "tokens": [
+    "55qm8b",
     "65c89k",
     "c855",
     "c89b",
@@ -1940,6 +2083,38 @@
     "g09",
     "g09_4k_gb",
     "t5m"
+   ]
+  },
+  {
+   "brand": [
+    "tcl"
+   ],
+   "config": {
+    "app_keys": [
+     "scan:242:com.netflix.ninja",
+     "scan:245:com.google.android.youtube.tv",
+     "scan:752:com.amazon.amazonvideo.livingroom",
+     "scan:365:com.tcl.tv",
+     "scan:652:ignore",
+     "scan:345:ignore",
+     "scan:762:ignore"
+    ],
+    "live_tv_package": "com.tcl.tv"
+   },
+   "id": "tcl-g10-google-tv",
+   "tokens": [
+    "43p69k",
+    "55c69b",
+    "55c6ks",
+    "55p6k",
+    "55q651g",
+    "55q6cs",
+    "55qm5k",
+    "g10",
+    "g10_4k_gb",
+    "g10_4k_gb_nf_32bit",
+    "g10_4k_us_nf",
+    "netherlands"
    ]
   },
   {
@@ -2072,6 +2247,39 @@
     "sppl",
     "sw6h",
     "~1.9"
+   ]
+  },
+  {
+   "brand": [
+    "tim"
+   ],
+   "config": {
+    "app_keys": [
+     "170:timvision.launcher"
+    ],
+    "app_labels": [
+     "com.nuvio.tv=Nuvio",
+     "org.smarttube.stable=SmartTube",
+     "app.opentv=OpenTV",
+     "timvision.launcher=Digitale Terrestre",
+     "com.technicolor.android.dtvscan.project=Sintonia DTT",
+     "com.nordvpn.android=NordVPN"
+    ],
+    "hidden_apps": [
+     "com.google.android.tv.remote.service",
+     "com.marvell.tv.overscan",
+     "com.technicolor.android.remotecontrolservice"
+    ],
+    "live_tv_package": "timvision.launcher"
+   },
+   "id": "tim-timvision-box-uzw4010tim",
+   "tokens": [
+    "bg4ct",
+    "marvell",
+    "technicolor",
+    "timvision",
+    "uzw4010tim",
+    "vantiva"
    ]
   },
   {
